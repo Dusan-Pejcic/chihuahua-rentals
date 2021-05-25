@@ -13,9 +13,8 @@
   </head>
 
   <body>
-    <% unless params[:action] == "home" %>
-    <h1>not homepage</h1>
-    <% end %>
+    <%= render 'shared/navbar' unless params[:action] == "home"%>
+    <%# end %>
     <%= yield %>
   </body>
 </html>

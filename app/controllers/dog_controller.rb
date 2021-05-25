@@ -1,4 +1,4 @@
 class DogController < ApplicationController
-  def controller
+  def index
   end
 end

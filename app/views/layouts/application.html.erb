@@ -13,6 +13,9 @@
   </head>
 
   <body>
+    <% unless params[:action] == "home" %>
+    <h1>not homepage</h1>
+    <% end %>
     <%= yield %>
   </body>
 </html>

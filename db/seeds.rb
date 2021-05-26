@@ -4,6 +4,7 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+
 #   Character.create(name: 'Luke', movie: movies.first)
 Dog.delete_all
 puts 'before seeds'
@@ -17,3 +18,4 @@ Dog.create!(user_id: 1, name: "Maxxx", address: "130 Court St, Brooklyn, NY 1120
 Dog.create!(user_id: 1, name: "Meep", address: "104 Broad St, New York, NY 10004, USA", img_url: "https://www.dogster.com/wp-content/uploads/2017/01/pinkysweater-600x600.jpg", cuteness_level: 5)
 
 puts 'after seeds'
+

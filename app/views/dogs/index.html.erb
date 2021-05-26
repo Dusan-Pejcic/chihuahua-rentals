@@ -1,0 +1,11 @@
+<div class="flex-container">
+<% @dogs.each do |dog| %>
+<div class="card-product">
+  <img src="<%= dog.img_url %>">
+  <div class="card-product-infos">
+    <h2><<%= dog.name %></h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>
+<% end %>
+

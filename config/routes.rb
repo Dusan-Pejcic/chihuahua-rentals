@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  resources :dogs
-  devise_for :users
   root to: 'pages#home'
+  resources :dogs do
+    resources :bookings, only: [:new, :create]
+  devise_for :users
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+end
 end

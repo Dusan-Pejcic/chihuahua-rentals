@@ -1,0 +1,28 @@
+
+
+.dog-card-container{
+    width: 100%;
+    display: flex;
+}
+
+.dog-card{
+    flex: 1;
+
+    /* background-image: url('dog.png'); */
+    /* HEROKU VERSION background-image: asset-url('dog.png'); */
+}
+.img-container{
+    widht: 100%;
+
+    img{
+        width: 100%;
+        height: auto; 
+    }
+}
+
+.map-container{
+    flex: 1;
+    background-image: url(map.png);
+}
+
+

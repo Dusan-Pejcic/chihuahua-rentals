@@ -6,16 +6,14 @@
     <div class="dog-card">
         <div class="img-container">
         <img src="<%= @dog.img_url %>" alt="">
-        
+
         </div>
         <div class="text-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula urna eget turpis interdum convallis. Donec quis erat at dolor sodales posuere. Nulla ante dui, hendrerit id eleifend in, facilisis non purus. Ut lectus ex, porta sit amet elementum at, sagittis ut nisi. Quisque ultrices urna vitae ex faucibus vestibulum.</p>
-
         <div class="button-container">
-        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+
+          <div class="description"><%= @dog.description %></div>
         <div id="link"><%= link_to 'View Other Chihuhuas', dogs_path, class: "btn btn-flat" %></div>
         <div id="link"><%= link_to 'Book This Chi', new_dog_booking_path(@dog), class: "btn btn-flat" %></div>
-
         </div>
 
         </div>

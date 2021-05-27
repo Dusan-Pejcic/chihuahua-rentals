@@ -5,6 +5,10 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
+    def show
+        @booking = Booking.find(params[:id])
+    end
+
   def create
     @booking = Booking.new(booking_params)
 
@@ -20,8 +24,8 @@ class BookingsController < ApplicationController
 
     @booking.user = @user
     if @booking.save
-      redirect_to dogs_path(@path)
-    else
+      redirect_to dog_booking_path(@booking.dog, @booking)
+        else
       render :new
     end
   end

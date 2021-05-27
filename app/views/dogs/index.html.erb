@@ -1,4 +1,19 @@
+
+<h1 class="text-Center">Searching dogs</h1>
+
+<div class="container">
+  <%= form_tag dogs_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a dog"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+</div>
+
 <div class="flex-container">
+
 <% @dogs.each do |dog| %>
 <div class="card-product">
   <img src="<%= dog.img_url %>">
@@ -6,7 +21,6 @@
     <h2><%= dog.name %></h2>
     <p><%= dog.description %></p>  
     <div id="button">  <%= link_to 'Book Me', dog_path(dog), class: "btn btn-flat" %></div>
-
   </div>
 </div>
 <% end %>

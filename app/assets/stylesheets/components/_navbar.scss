@@ -1,6 +1,14 @@
 .nav{
-  height: 10vh;
-  background-image: asset-url('dog.png');
+  padding: 10px;
+  height: 15vh;
+  background-image: asset-url('nav-pic.gif');
   background-size: cover;
-  background-position-y: -170px;
+}
+
+.nav-logo-img{
+  height: 100%;
+  width: 150px;
+  background-image: asset-url('chi-chi-logo.png');
+  background-size: contain ;
+  background-repeat: no-repeat;
 }

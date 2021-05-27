@@ -1,11 +1,20 @@
+
+
+<div>
+  <form class="search-box" action="/search">
+    <input class="search-txt" name="q" type="text" placeholder="Search" aria-label="Search">
+    <button class="search-btn" type="submit">Search</button>
+  </form>
+</div>
+
 <div class="flex-container">
-<% @dogs.each do |dog| %>
-<div class="card-product">
-  <img src="<%= dog.img_url %>">
-  <div class="card-product-infos">
-    <h2><%= dog.name %></h2>
-    
-    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...</p>
+  <% @dogs.each do |dog| %>
+  <div class="card-product">
+    <img src="<%= dog.img_url %>">
+    <div class="card-product-infos">
+      <h2><%= dog.name %></h2>
+
+      <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...</p>
     <div id="button"><button>Book Me!</button></div>>
   </div>
 </div>

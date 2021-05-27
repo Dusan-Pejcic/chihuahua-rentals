@@ -6,7 +6,7 @@
     <h2><%= dog.name %></h2>
     
     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...</p>
-    <div id="button"><button>Book Me!</button></div>>
+    <div id="button">  <%= link_to 'Book Me', dog_path(dog) %></div>
   </div>
 </div>
 <% end %>

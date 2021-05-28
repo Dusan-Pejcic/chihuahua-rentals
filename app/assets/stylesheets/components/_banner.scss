@@ -21,8 +21,21 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+
 .banner a {
   background: $primary-color;
    color: white;
    border-radius:32px;
 }
+
+.banner-content {
+  float: right;
+  width: 400px;
+  padding-left: 50px;
+  padding-top: 120px;
+  img {
+    margin-bottom: 20px;
+
+  }
+}
+

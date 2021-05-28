@@ -4,6 +4,37 @@
     width: 50vw;
     }
 
+<<<<<<< HEAD
+.dog-card-container{
+  position: absolute;
+  width: 1440px;
+    //display: flex;
+  height: 1536px;
+  left: 0px;
+  top: 138px;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+}
+
+.dog-card{
+    //flex: 1;
+    //flex: 1 0 48%;
+    //margin: 1%;
+    //flex-direction: column;
+    //width: 90%;
+    //height: 90%;
+  position: absolute;
+  width: 450px;
+    //display: flex;
+  height: 744px;
+  left: 244px;
+  top: 488px;
+  box-sizing: border-box;
+  border: 5px;
+
+
+=======
 .dog-card{
     width: 50vw;
     height: 80vh;
@@ -20,6 +51,7 @@
     flex-direction: column;
     height: 100%;
 }
+>>>>>>> master
 
 .map-container{
     flex: 1;
@@ -30,12 +62,30 @@
    
    height: 80vh; 
 }
+
 .img-container{
     flex: 3;
     width: 100%;
 
     img{
         width: 100%;
+<<<<<<< HEAD
+        height: auto;
+    }
+}
+
+.map-container{
+    //flex: 1;
+  position: absolute;
+  width: 450px;
+    //display: flex;
+  height: 744px;
+  left: 694px;
+  top: 488px;
+  box-sizing: border-box;
+  border: 5px;
+    /* background-image: asset-url('map.png'); */
+=======
         height: 100%; 
         object-fit: cover;
         object-position: right top;
@@ -55,12 +105,16 @@ justify-content: flex-end;
 .mapboxgl-canvas{
    
      
+>>>>>>> master
 }
 
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
 
+>>>>>>> master

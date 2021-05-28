@@ -1,18 +1,17 @@
 
-<h1 class="text-Center">Searching dogs</h1>
 
-<div class="container">
-  <%= form_tag dogs_path, method: :get do %>
+
+
+<div class="flex-container">
+
+  <%= form_tag dogs_path, method: :get, class: "d-flex" do %>
   <%= text_field_tag :query,
     params[:query],
     class: "form-control",
     placeholder: "Find a dog"
   %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
+  <%= submit_tag "Search", class: "btn btn-primary searchbutton" %>
 <% end %>
-</div>
-
-<div class="flex-container">
 
 <% @dogs.each do |dog| %>
 <div class="card-product">
@@ -28,5 +27,7 @@
    </div>
  </div>
 </div>
+
 <% end %>
 
+</div>

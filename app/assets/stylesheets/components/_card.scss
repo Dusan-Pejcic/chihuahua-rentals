@@ -5,27 +5,27 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     display: flex;
     align-items: center; 
-     #button {
-     padding-right: 35px;
-     padding-top: 10px;
-   }
+    padding: 14px;
+    margin: 14px;
   }
   
   .card-product img {
     height: 100%;
     width: 120px;
     object-fit: cover;
+    padding-bottom: 10px;
   }
   
   .card-product h2 {
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 28px;
     font-weight: bold;
     margin: 0;
+    padding-bottom: 5px;
   }
   
   .card-product p {
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     line-height: 1.4;
     opacity: .7;
@@ -34,14 +34,17 @@
   }
   
   .card-product .card-product-infos {
-    text-align: center;
+    text-align: left;
     padding: 16px;
     flex-grow: 1;
   }
 
   .flex-container {
-    margin: 0 auto;
+    margin: 70px;
     width: 60%;
  }
 
- 
+
+
+
+

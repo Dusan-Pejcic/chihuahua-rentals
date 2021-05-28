@@ -3,5 +3,7 @@
     <h1>Congratulations!!</h1>
     <p>You booked</p>
     <h1><%= @booking.dog.name %></h1>
+    <div id="button">
+    <%= link_to "Go Back To My Fellow Chi-Chi's", dogs_path, class: "btn btn-flat" %>
   </div>
 </div>

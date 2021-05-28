@@ -1,28 +1,66 @@
 
-
-.dog-card-container{
-    width: 100%;
-    display: flex;
-}
+    .dog-card-container{
+    margin: 20vh 0;
+    width: 50vw;
+    }
 
 .dog-card{
-    flex: 1;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    background-color: white;
+    flex: 1; 
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
 
-    /* background-image: url('dog.png'); */
-    /* HEROKU VERSION background-image: asset-url('dog.png'); */
+.img-text-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.map-container{
+    flex: 1;
+    width: 100%; 
+    height: 80vh;
+}
+#map{
+   
+   height: 80vh; 
 }
 .img-container{
+    flex: 3;
     width: 100%;
 
     img{
         width: 100%;
-        height: auto; 
+        height: 100%; 
+        object-fit: cover;
+        object-position: right top;
     }
 }
 
-.map-container{
-    flex: 1; 
-    /* background-image: asset-url('map.png'); */
+.text-container{
+    flex: 1;
+    padding: 20px;
 }
+
+#link{
+display: flex;
+justify-content: flex-end;
+}
+
+.mapboxgl-canvas{
+   
+     
+}
+
+
+
+
+
+
 
 

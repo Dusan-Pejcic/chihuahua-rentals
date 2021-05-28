@@ -1,27 +1,51 @@
 <div class="container">
 
-<h1><%= @dog.name %></h1>
 
-<div class="dog-card-container">
-    <div class="dog-card">
-        <div class="img-container">
-        <img src="<%= @dog.img_url %>" alt="">
+  <div class="dog-card-container">
 
-        </div>
-        <div class="text-container">
-        <div class="button-container">
+  <h1><%= @dog.name %></h1>
+  <h2> I'm adorable!</h2>
+      <div class="dog-card">
+        <div class="img-text-container">
 
-          <div class="description"><%= @dog.description %></div>
-        <div id="link"><%= link_to 'View Other Chihuhuas', dogs_path, class: "btn btn-flat" %></div>
-        <div id="link"><%= link_to 'Book This Chi', new_dog_booking_path(@dog), class: "btn btn-flat" %></div>
-        </div>
+            <div class="img-container">
+            <img src="<%= @dog.img_url %>" alt="">
+            </div>
 
-        </div>
-    </div>
-    <div id="map"
-     style="width: 100%; height: 600px;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
-</div>
+            
+
+            <div class="text-container">
+              <p class="description"><%= @dog.description %></p>
+          
+              <div class="button-container">
+
+                <p class="secondary-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec facilisis ex, vitae scelerisque odio.
+                </p>
+            
+                <div id="link"><div class="btn-container">
+                <%= link_to 'Book This Chi', new_dog_booking_path(@dog), class: "btn btn-flat" %></div>
+                </div>
+              </div>
+            </div>
+
+
+              
+        </div>   
+
+          <div class="map-container">
+            <div id="map"
+            data-markers="<%= @markers.to_json %>"
+            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+            </div>
+          
+          </div>
+      </div>
+
+          <div id="link"><%= link_to 'View Other Chihuhuas', dogs_path, class: "" %>
+          </div>
+  </div>
+
+
 
 </div>

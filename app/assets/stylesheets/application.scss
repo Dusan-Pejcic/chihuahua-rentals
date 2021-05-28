@@ -11,3 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+body{
+    background-image: asset-url('bg-img.jpg');
+    opacity: 0.1;
+    position: relative;
+    z-index: -10;
+}
